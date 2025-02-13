@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://mern-coding-challenge.onrender.com";
+const API_BASE_URL = "https://mern-coding-challenge.onrender.com/api/transactions";
 
 export const fetchTransactions = async (month, search, page, perPage) => {
   return await axios.get(`${API_BASE_URL}`, {
